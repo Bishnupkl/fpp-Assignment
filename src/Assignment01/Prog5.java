@@ -1,22 +1,22 @@
-package Assignment_1;
+package Assignment01;
 
 import java.util.*;
 
 public class Prog5 {
     public static void main (String[]args){
-        int[] arraya = {5, 6, -4, 3, 1};
-        int[] arrayb = {3, 8, 9, 11};
-        System.out.println(Arrays.toString(combine(arraya, arrayb)));
+        int[] arraya = {5, 6, -4, 3, 1}; //regular array declaration
+        System.out.println(Arrays.toString(combine(arraya,new int[] {3, 8, 9, 11}))); //anonymous array
     }
 
     public static int[] combine(int[] a, int[] b) {
+        if(a.length == 0 && b.length == 0)
+            return new int[] {};
         int[] result = new int[a.length + b.length];
-        int i;
-        int j;
-        for (i = 0; i < a.length; i++) {
+        int i = 0;
+        for ( ; i < a.length; i++) {
             result[i] = a[i];
         }
-        for (j = 0; j < b.length; j++) {
+        for (int j = 0; j < b.length; j++) {
             result[i] = b[j];
             i++;
         }

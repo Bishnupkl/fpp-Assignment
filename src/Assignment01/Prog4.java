@@ -26,7 +26,6 @@ public class Prog4 {
         for(int i = 0; i < count; i++){
             result[i] = arr_removeDuplicate[i];
         }
-        System.out.println(Arrays.toString(arr_removeDuplicate));
         System.out.println(Arrays.toString(result));
     }
 }

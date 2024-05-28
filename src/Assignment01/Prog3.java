@@ -1,3 +1,5 @@
+package Assignment01;
+
 public class Prog3 {
 
     public static void main(String[] args) {
@@ -27,13 +29,9 @@ public class Prog3 {
                 "215A,Hair Ball,0,Little Jimmy,0.00:";
 
         String[] recordsArray = records.split(":");
-
         for (int i = 0; i < recordsArray.length; i++) {
             String[] rowArray = recordsArray[i].split(",");
             System.out.println(rowArray[0]);
-
         }
-
-
     }
 }
